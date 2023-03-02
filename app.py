@@ -44,11 +44,11 @@ def autenticar_cpf():
 
 @app.route("/autenticar", methods=['POST', 'GET'])    
 def autenticar():
-    nome = request.form.get('nome')
+    nome = request.form.get('name')
     data_de_nascimento = request.form.get('date')
     email = request.form.get('email')
     cpf = request.form.get('cpf')
-    senha = request.form.get('senha')
+    senha = request.form.get('password')
     
     novo_paciente = Paciente(nome=nome, data_de_nascimento=data_de_nascimento, email=email, cpf=cpf, senha=senha)
     db.session.add(novo_paciente)
