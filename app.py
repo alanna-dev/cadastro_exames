@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import logging
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:Palinopsia20.@localhost/cadastro_exames'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:password.@localhost/cadastro_exames'
 db = SQLAlchemy(app)
 
 
